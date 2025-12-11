@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المحامية إيمان عبد الرزاق العلي | مكتب متخصص في القضايا المدنية والجنائية</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    
+    <link href="https://fonts.googleapis.com/css2?family=Ruwudu:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+      
+        .details-section-header { 
+            background-color: var(--bg-dark); 
+            padding: 50px 0 20px; 
+            margin-top: -100px; 
+            padding-top: 150px; 
+        }
+        .details-container { padding: 40px 0; max-width: 900px; margin: 0 auto; }
+        .content-section { 
+            border-bottom: 1px solid #333; 
+            padding-bottom: 30px; 
+            margin-bottom: 30px; 
+            scroll-margin-top: 100px; 
+        }
+        .content-section:last-child { border-bottom: none; }
+        .main-services-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px; margin-top: 20px; }
+        .service-point { background: #1a1a1a; padding: 20px; border-radius: 8px; border-right: 3px solid var(--gold-solid); }
+        .service-point h4 { color: white; margin-bottom: 5px; }
+        .service-point p { color: var(--text-grey); font-size: 0.9rem; }
+        
+        @media (max-width: 992px) {
+            .main-services-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+              <img src="assets/images/logo.png" alt="Lawyer Logo" class="logo-img" />
+                <div class="logo-text">
+                    <span class="logo-title">المحامية</span>
+                    <span class="logo-name logo-name-style">إيمان عبد الرزاق العلي</span>
+                    <span class="logo-subtext">للمحاماة والاستشارات القانونية</span>
+                </div>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="#home">الرئيسية</a></li>
+                <li class="dropdown-link">
+                    <a href="#services" onclick="toggleDropdown(event)">خدماتنا <i class="fa-solid fa-chevron-down" style="font-size: 0.7rem;"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="services-hub.html#criminal-cases">القضايا الجزائية جنائية/الجنح</a></li>
+                        <li><a href="services-hub.html#admin-commercial-cases">القضايا الإدارية والتجارية</a></li>
+                        <li><a href="services-hub.html#civil-cases">القضايا المدنية</a></li>
+                        <li><a href="services-hub.html#family-cases">قضايا الأحوال الشخصية والأسرة</a></li>
+                        <li><a href="services-hub.html#labour-cases">القضايا العمالية</a></li>
+                        <li><a href="services-hub.html#cyber-cases">القضايا الإلكترونية</a></li>
+                    </ul>
+                </li>
+                <li><a href="#about">من نحن</a></li> 
+                <li><a href="#booking-form-start" class="btn-gold">حجز موعد</a></li>
+            </ul>
+            
+            <div class="menu-toggle" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></div>
+        </div>
+    </header>
+    <section id="home" class="hero">
+        <video autoplay muted loop id="hero-video">
+            <source src="videos/law_abstract.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay"></div>
+        
+        <div class="container hero-grid">
+            <div class="hero-text">
+                <span class="gold-subtitle">الخبرة . الثقة . الاحترافية</span>
+                <h1><span class="text-gradient">حين يسود القانون...</span> <br> يسقط كل ادعاء</h1>
+                <p class="hero-desc">مكتب رائد في الكويت متخصص في القضايا المدنية، الجنائية، والأحوال الشخصية.</p>
+                <div class="btn-group">
+                    <a href="https://wa.me/+96550207055" class="btn-gold" target="_blank"><i class="fa-brands fa-whatsapp"></i> استشارة فورية</a>
+                    <a href="#services" class="btn-outline">اكتشف خدماتنا</a>
+                </div>
+            </div>
+            <div class="hero-img-wrapper">
+                <div class="img-frame">
+                    <img src="assets/images/img3.png" alt="المحامية إيمان عبد الرزاق العلي">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="philosophy" class="philosophy-section section-padding">
+        <div class="container" style="text-align: center;">
+            <div class="philosophy-header" style="max-width: 800px; margin: 0 auto;">
+                <h2 style="font-size: 3rem; margin-bottom: 20px;">العدالة... <span class="text-3d">روح القانون</span> وميزان الحقيقة</h2>
+            </div>
+            <div class="philosophy-content" style="padding-right: 0; text-align: justify; margin: 0 auto; max-width: 900px;">
+                <p>في كل مجتمع يسعى إلى الاستقرار، تبقى العدالة هي الركيزة الأولى التي تُشيّد عليها الثقة، وهي البوابة التي تعبر منها الحقوق إلى أصحابها دون خوف أو تحيّز. فالعدالة ليست مجرّد نصوص مكتوبة، بل **روحٌ حيّة** تسري في شرايين القانون، وتكشف الطريق بين الحق والباطل بميزان لا يميل.</p>
+                
+                <span class="quote">"أن يُنصف الإنسان لكونه إنسانًا، لا لصفته أو مكانته"</span>
+                
+                <p>ولذلك، فإن المحامي ليس فقط ممثلًا قانونيًا، بل **حارسًا للميزان**، يسعى إلى إعادة التوازن متى اختل، وإلى حماية المظلوم متى عجز عن الدفاع عن نفسه. إنها مسؤولية أخلاقية قبل أن تكون مهنية، ورسالة قبل أن تكون وظيفة.</p>
+            </div>
+        </div>
+    </section>
+    <section id="services" class="services-section section-padding">
+        <div class="container text-center">
+            <span class="gold-subtitle">تخصصنا الأساسي</span>
+            <h2 class="section-title">مجالات عملنا القانوني</h2>
+            
+            <div class="services-grid">
+                
+                <a href="services-hub.html#criminal-cases" class="service-card">
+                    <i class="fas fa-handcuffs"></i> 
+                    <h3>القضايا الجزائية جنائية/الجنــح</h3>
+                    <p>
+                        الدفاع في قضايا الجنح والمخالفات، قضايا المخدرات، والتمثيل القانوني أمام كافة المحاكم الجزائية.
+                    </p>
+                </a>
+
+                <a href="services-hub.html#admin-commercial-cases" class="service-card">
+                    <i class="fas fa-building"></i>
+                    <h3>القضايا الإدارية والتجارية</h3>
+                    <p>
+                        الطعن في القرارات الإدارية، المنازعات التجارية، قضايا المناقصات، وتصفية الشركات وحل النزاعات التجارية.
+                    </p>
+                </a>
+
+                <a href="services-hub.html#civil-cases" class="service-card">
+                    <i class="fas fa-house-damage"></i> 
+                    <h3>القضايا المدنية</h3>
+                    <p>
+                        دعاوى التعويضات، قضايا الإيجارات والنزاعات العقارية، ومطالبات الحقوق المالية والمدنية.
+                    </p>
+                </a>
+
+                <a href="services-hub.html#family-cases" class="service-card">
+                    <i class="fas fa-people-arrows"></i> 
+                    <h3>قضايا الأحوال الشخصية والأسرة</h3>
+                    <p>
+                        متخصصون في قضايا الطلاق والخلع والحضانة والنفقات والميراث، بتقديم حلول قانونية تحمي مصالح الأسرة.
+                    </p>
+                </a>
+
+                <a href="services-hub.html#labour-cases" class="service-card">
+                    <i class="fas fa-users-cog"></i> 
+                    <h3>القضايا العمالية</h3>
+                    <p>
+                        الدفاع عن حقوق العمال والموظفين، المطالبة بالمستحقات المالية، والفصل التعسفي، والتمثيل القانوني أمام محاكم العمل.
+                    </p>
+                </a>
+
+                <a href="services-hub.html#cyber-cases" class="service-card">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>الجرائم الإلكترونية</h3>
+                    <p>
+                        الجرائم المرتبطة بالتكنولوجيا، التشهير والابتزاز الإلكتروني، وحماية البيانات والخصوصية الرقمية.
+                    </p>
+                </a>
+
+            </div>
+        </div>
+    </section>
+    <section id="about" class="about-section section-padding">
+        <div class="container about-grid">
+            <div class="about-text">
+                <span class="gold-subtitle"> نبذة عن المحامية</span>
+                <h2>المحامية إيمان عبد الرزاق العلي</h2>
+                <p>تمتلك المحامية إيمان عبدالرزّاق العلي خبرة
+                    قانونية تمتد لأكثر من 7 سنوات في مجال المحاماة، قدّمت خلالها خدمات قانونية متكاملة للأفراد والشركات باحترافية عالية.
+تتخصص في القضايا الجنائية والجنح، والقضايا المدنية والتجارية، وقضايا الأسرة 
+والعمالة والجرائم الإلكترونية، مع خبرة قوية في الترافع أمام جميع 
+درجات المحاكم. وتتميز بالدقّة في دراسة القضايا، والالتزام الكامل بسرية 
+العملاء، وتقديم حلول قانونية فعّالة مبنية على فهم عميق للقوانين الكويتية.</p>
+                
+                <h3 style="color: var(--gold-solid); margin-top: 30px; font-size: 1.5rem;">ملف الإنجازات</h3>
+                <div class="management-features" style="grid-template-columns: 1fr 1fr;">
+                    <div class="feature-item"><i class="fa-solid fa-trophy"></i><span>سجل حافل من الإنجازات القضائية.</span></div>
+                    <div class="feature-item"><i class="fa-solid fa-graduation-cap"></i><span>خبرة أكاديمية وعملية طويلة.</span></div>
+                    <div class="feature-item"><i class="fa-solid fa-shield-halved"></i><span>حماية كاملة وسرية للملفات.</span></div>
+                    <div class="feature-item"><i class="fa-solid fa-gavel"></i><span>رأي قانوني سديد وموثوق.</span></div>
+                </div>
+                
+                </div>
+            <div class="hero-img-wrapper">
+                <div class="img-frame">
+                    <img src="assets/images/img1.jpeg" alt="المحامية إيمان عبد الرزاق العلي">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="booking-form-start" class="about-section section-padding" style="background: var(--bg-black);">
+        <div class="container contact-form-wrapper" style="max-width: 800px; margin: 0 auto;">
+            <h2 class="section-title" style="margin-bottom: 20px;">تواصل معنا واحجز استشارتك</h2>
+
+            <div class="contact-form">
+                <h3 style="color: var(--gold-solid); margin-bottom: 20px; text-align: center;">نموذج حجز استشارة</h3>
+                <p style="color: var(--text-grey); text-align: center; margin-bottom: 25px;">املأ النموذج لترتيب موعد استشارتك مع المحامية إيمان عبد الرزاق العلي.</p>
+                <form action="send.php" method="POST">
+                    <div class="form-group"><input type="text" name="name" placeholder="الاسم الكريم" required></div>
+                    <div class="form-group"><input type="text" name="number" placeholder="الرقم المدني" required></div>
+                    <div class="form-group"><input type="text" name="phone" placeholder="رقم الهاتف" required></div>
+                    <div class="form-group"><input type="email" name="email" placeholder="البريد الإلكتروني" required></div>
+                    <div class="form-group">
+                        <select name="service_type" required>
+                            <option value="" disabled selected>اختر نوع القضية / الاستشارة</option>
+                            <option value="Criminal">قضية الجزائية جنائية/الجنح</option>
+                            <option value="Admin-Commercial">قضية إدارية/تجارية</option>
+                            <option value="Civil">قضية مدنية</option>
+                            <option value="FamilyLaw">أحوال شخصية (طلاق/نفقة/حضانة)</option>
+                            <option value="Labour">قضية عمالية</option>
+                            <option value="Cyber">الجرائم إلكترونية</option>
+                        </select>
+                    </div>
+                    <div class="form-group"><textarea name="message" rows="5" placeholder="تفاصيل الاستفسار (اختياري)" ></textarea></div>
+                    <button type="submit">إرسال طلب الاستشارة</button>
+                </form>
+            </div>
+        </div>
+        
+        <div id="contact" class="container" style="text-align: center; padding-top: 50px;">
+              
+             <div class="contact-info-header">
+                <span class="gold-subtitle">للتواصل المباشر والموقع</span>
+                <h2>معلومات المكتب</h2>
+             </div>
+
+             <div class="contact-map-grid">
+                
+                <div class="contact-details-col">
+                    <div class="contact-item">
+                          <i class="fa-solid fa-location-dot"></i>
+                          <p><strong>العنوان:</strong> شرق- شارع جابر المبارك - برج خولة دور 6</p>
+                          <a href="https://maps.app.goo.gl/EocSZpHtYtZbsDQp9" target="_blank">شاهد الموقع على الخريطة (برج خولة)</a>
+                    </div>
+                    <div class="contact-item" style="direction: ltr;">
+                          <i class="fa-solid fa-phone"></i>
+                          <p style="direction: rtl;"><strong>للتواصل الهاتفي:</strong></p>
+                          <a href="tel:+96550207055"> +965 5020 7055 </a>
+                    </div>
+                    <div class="contact-item">
+                          <i class="fa-solid fa-envelope"></i>
+                          <p><strong>البريد الإلكتروني:</strong></p>
+                          <a href="emmaaaa0077@gmail.com">emmaaaa0077@gmail.com</a>
+                    </div>
+                </div>
+
+                <div class="map-placeholder-col">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3476.7805097694613!2d47.991157975431655!3d29.37671527526662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3fcf84a27dab9bfb%3A0x97ac7f5e1fb89f72!2sKhawla%20Tower%2C%20Al%20Kuwayt!5e0!3m2!1sen!2skw!4v1764716705378!5m2!1sen!2skw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                </div>
+                </div>
+
+
+            <div style="margin-top: 40px; display: flex; gap: 20px; justify-content: center;">
+                <a href="https://www.facebook.com/share/17Y6Ut5Bdf/?mibextid=wwXIfr" target="_blank" class="social-icon"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://x.com/Lawyeremanalali" target="_blank" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.instagram.com/lawyer_emanalali?igsh=MTJpOGZoZzV2OHkwYg==" target="_blank" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@lawyer_emanalali?is_from_webapp=1&sender_device=pc" target="_blank" class="social-icon"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://wa.me/+96550207055" target="_blank" class="social-icon"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </section>
+    <footer><p>جميع الحقوق محفوظة © مكتب المحامية إيمان عبد الرزاق العلي 2025</p></footer>
+    <script src="script.js"></script>
+</body>
+</html>
