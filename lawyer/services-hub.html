@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>كافة خدماتنا القانونية التفصيلية | المحامية إيمان عبد الرزاق العلي</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Ruwudu:wght@400;500;600;700&family=Tajawal:wght@300;400;700;800;900&display=swap" rel="stylesheet">
+
+    <style>
+        /* التنسيقات الخاصة بصفحة الخدمات المركزية */
+        .page-header { 
+            background: linear-gradient(rgba(5, 5, 5, 0.75), rgba(5, 5, 5, 0.75)), 
+                        url('assets/images/services_header_bg.jpg') no-repeat center center; 
+            background-size: cover; 
+            background-attachment: fixed; 
+            padding: 80px 0; /* تم رفع المحتوى للأعلى قليلاً */
+            text-align: center; 
+            border-bottom: 3px solid var(--gold-solid); 
+            margin-top: 80px; 
+        }
+        .page-header h1 { font-size: 3rem; color: var(--gold-solid); }
+        
+        .detailed-content-wrapper { 
+            padding: 80px 0; 
+            max-width: 900px; 
+            margin: 0 auto;
+        }
+
+        .content-section { 
+            border-bottom: 1px solid #333; 
+            padding-bottom: 40px; 
+            margin-bottom: 40px; 
+            scroll-margin-top: 100px; 
+        }
+        .content-section:last-child { border-bottom: none; }
+        
+        .section-subtitle { 
+            color: var(--gold-solid); 
+            font-size: 1.8rem; 
+            font-weight: 700; 
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .main-services-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px; margin-top: 20px; }
+        .service-point { 
+            background: #1a1a1a; 
+            padding: 20px; 
+            border-radius: 8px; 
+            border-right: 3px solid var(--gold-solid);
+            transition: all 0.3s;
+        }
+        .service-point:hover { background: #222; }
+        .service-point h4 { color: white; margin-bottom: 5px; font-size: 1.1rem; }
+        .service-point p { color: var(--text-grey); font-size: 0.9rem; line-height: 1.6; }
+
+        .list-container { 
+            display: grid; 
+            grid-template-columns: repeat(2, 1fr); 
+            gap: 20px; 
+            margin-top: 20px;
+        }
+        .list-container li { 
+            background: #1a1a1a; 
+            padding: 15px; 
+            border-radius: 5px;
+            border-right: 3px solid var(--gold-solid);
+            list-style: none;
+            color: var(--text-grey);
+        }
+        .list-container li strong { color: white; display: block; margin-bottom: 5px; }
+
+
+        @media (max-width: 992px) {
+            .main-services-grid, .list-container { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+              <img src="assets/images/logo.png" alt="Lawyer Logo" class="logo-img" />
+                <div class="logo-text">
+                    <span class="logo-title">المحامية</span>
+                    <span class="logo-name logo-name-style">إيمان عبد الرزاق العلي</span>
+                    <span class="logo-subtext">للمحاماة والاستشارات القانونية</span>
+                </div>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="index.html">الرئيسية</a></li>
+                <li class="dropdown-link">
+                    <a href="#family-law-details" onclick="toggleDropdown(event)">خدماتنا <i class="fa-solid fa-chevron-down" style="font-size: 0.7rem;"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#criminal-cases">القضايا الجزائية الجنائية/الجنح</a></li>
+                        <li><a href="#admin-commercial-cases">القضايا الإدارية والتجارية</a></li>
+                        <li><a href="#civil-cases">القضايا المدنية</a></li>
+                        <li><a href="#family-cases">قضايا الأحوال الشخصية والأسرة</a></li>
+                        <li><a href="#labour-cases">القضايا العمالية</a></li>
+                        <li><a href="#cyber-cases">القضايا الإلكترونية</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html#about">من نحن</a></li>
+                <li><a href="index.html#booking-form-start" class="btn-gold">حجز موعد</a></li>
+            </ul>
+            
+            <div class="menu-toggle" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></div>
+        </div>
+    </header>
+    <section class="page-header">
+        <h1>كافة خدماتنا القانونية المتخصصة</h1>
+        <p style="color: white; margin-top: 10px;">استكشف كافة أقسام عملنا بالتفصيل.</p>
+    </section>
+    <section class="detailed-content-wrapper container">
+      <div id="criminal-cases" class="content-section">
+    <h3 class="section-subtitle"><i class="fa-solid fa-handcuffs"></i> القضايا الجزائية (الجنائية/الجنح)</h3>
+    <p style="color: var(--text-grey); margin-bottom: 20px;">التمثيل والدفاع القانوني أمام كافة المحاكم الجزائية في قضايا الجنايات والجنح والمخالفات، لضمان تطبيق العدالة وحماية حقوق المتهمين أو المجني عليهم.</p>
+
+    <h4 style="color: white; margin-bottom: 15px;">أنواع القضايا الجنائية التي نتولى الدفاع فيها:</h4>
+    <ul class="list-container" style="grid-template-columns: 1fr 1fr;">
+        <li>**الجنايات:** (القتل، الشروع بالقتل، هتك العرض).</li>
+        <li>**الجنح:** (النصب والاحتيال، خيانة الأمانة، التزوير).</li>
+        <li>**المخالفات:** (مخالفات المرور، المخالفات العامة).</li>
+        <li>قضايا المخدرات (حيازة وتعاطي وترويج).</li>
+        <li>قضايا السرقة.</li>
+        <li>قضايا الضرب والاعتداء على الغير.</li>
+        <li>قضايا الشيكات.</li>
+        <li>قضايا السب والقذف والتحرش.</li>
+        <li>قضايا الأموال العامة.</li>
+    </ul>
+</div>
+
+<div id="admin-commercial-cases" class="content-section">
+    <h3 class="section-subtitle"><i class="fa-solid fa-building"></i> القضاياالإداريةالتجارية</h3>
+    <p style="color: var(--text-grey); margin-bottom: 20px;">نقدم حلولاً قانونية شاملة للنزاعات التجارية، بدءاً من تصفية الشركات وصولاً إلى دعاوى الإفلاس.</p>
+
+    <h4 style="color: white; margin-top: 30px; margin-bottom: 15px;">نطاق القضايا التجارية:</h4>
+    <ul class="list-container" style="grid-template-columns: 1fr;">
+        <li>**نزاعات الشركات:** تصفية وحل النزاعات بين الشركاء أو المساهمين.</li>
+        <li>**الدعاوى التجارية:** (الكمبيالات، الشيكات، دعاوى الشركات).</li>
+        <li>**العقود التجارية:** نزاعات التنفيذ والفسخ.</li>
+        <li>دعاوى الإفلاس.</li>
+    </ul>
+</div>
+      
+<div id="civil-cases" class="content-section">
+    <h3 class="section-subtitle"><i class="fa-solid fa-house-damage"></i> القضايا المدنية</h3>
+    <p style="color: var(--text-grey); margin-bottom: 20px;">التمثيل القانوني في كافة المنازعات المدنية المتعلقة بالحقوق والالتزامات بين الأفراد.</p>
+
+    <h4 style="color: white; margin-bottom: 15px;">أهم القضايا المدنية المتخصصة:</h4>
+    <ul class="list-container" style="grid-template-columns: 1fr 1fr;">
+        <li>**الدعاوى المدنية:** (المطالبات المالية، دعاوى التعويض).</li>
+        <li>**دعاوى العقود:** (فسخ العقود، المقاولات).</li>
+        <li>دعاوى التعويضات الناتجة عن الأضرار وحوادث السير.</li>
+        <li>النزاعات العقارية (دعاوى حقوق الملكية).</li>
+    </ul>
+</div>
+
+<div id="family-cases" class="content-section">
+    <h3 class="section-subtitle"><i class="fa-solid fa-people-arrows"></i> قضايا الأحوال الشخصية والأسرة</h3>
+    <p style="color: var(--text-grey); margin-bottom: 20px;">نضمن لك التعامل مع القضايا الأسرية بحساسية عالية وسرية تامة، مع التركيز على تطبيق قانون الأحوال الشخصية الكويتي.</p>
+
+    <h4 style="color: white; margin-bottom: 15px;">أهم القضايا المتخصصة:</h4>
+    <ul class="list-container" style="grid-template-columns: 1fr 1fr;">
+        <li>الطلاق لضرر.</li>
+        <li>الحضانة، النفقة، والرؤية.</li>
+        <li>إثبات الزواج وإثبات النسب.</li>
+        <li>الميراث والوصية.</li>
+    </ul>
+</div>
+
+<div id="labour-cases" class="content-section">
+    <h3 class="section-subtitle"><i class="fa-solid fa-users-cog"></i> القضايا العمالية</h3>
+    <p style="color: var(--text-grey); margin-bottom: 20px;">التمثيل القانوني للعمال وأصحاب العمل في جميع النزاعات المتعلقة بقانون العمل الكويتي.</p>
+
+    <h4 style="color: white; margin-bottom: 15px;">مجالات القضايا العمالية:</h4>
+    <ul class="list-container" style="grid-template-columns: 1fr 1fr;">
+        <li>منازعات العمل.</li>
+        <li>مكافأة نهاية الخدمة والأجور.</li>
+        <li>إصابات العمل.</li>
+        <li>الفصل التعسفي.</li>
+    </ul>
+</div>
+
+<div id="admin-constitutional-cases" class="content-section">
+    <h3 class="section-subtitle"><i class="fa-solid fa-landmark"></i> القضايا الإدارية والدستورية</h3>
+    <p style="color: var(--text-grey); margin-bottom: 20px;">الطعون في القرارات الحكومية والإدارية ومنازعات التعيين والترقية، بالإضافة إلى الطعون الدستورية.</p>
+
+    <h4 style="color: white; margin-bottom: 15px;">نطاق القضايا الإدارية والدستورية:</h4>
+    <ul class="list-container" style="grid-template-columns: 1fr 1fr;">
+        <li>القرارات الإدارية (الإلغاء).</li>
+        <li>منازعات التعيين والترقية.</li>
+        <li>إلغاء القرارات الحكومية.</li>
+        <li>الطعون الدستورية.</li>
+    </ul>
+</div>
+
+
+<div id="cyber-cases" class="content-section">
+    <h3 class="section-subtitle"><i class="fa-solid fa-laptop-code"></i> الجرائم الإلكترونية</h3>
+    <p style="color: var(--text-grey); margin-bottom: 20px;">التعامل مع الجرائم الإلكترونية وجرائم تقنية المعلومات وحماية الخصوصية الرقمية.</p>
+
+    <h4 style="color: white; margin-bottom: 15px;">مجالات الجرائم الإلكترونية:</h4>
+    <ul class="list-container" style="grid-template-columns: 1fr;">
+        <li>**جرائم التشهير والابتزاز:** حماية الضحايا من القذف والسب عبر وسائل التواصل.</li>
+        <li>**الاختراق وسرقة البيانات:** اتخاذ الإجراءات القانونية ضد اختراق الحسابات والشركات.</li>
+        <li>**قضايا حماية الملكية الفكرية:** حماية المصنفات الرقمية والحقوق المعنوية على الإنترنت.</li>
+    </ul>
+</div>
+        </section>
+    <section id="faq" class="section-padding" style="background: var(--bg-dark);">
+        <div class="container" style="max-width: 900px; text-align: center;">
+              <span class="gold-subtitle">لأجوبتك الفورية</span>
+              <h2 class="section-title">الأسئلة الشائعة (FAQ)</h2>
+              
+              <div class="faq-list-full-width">
+                  <div class="faq-item">
+                      <h4><i class="fa-solid fa-question-circle"></i> ما هي مدة الاستشارة وطريقة الدفع المتاحة؟</h4>
+                      <p>يتم تحديد مدة الاستشارة وطرق الدفع عند حجز الموعد.</p>
+                  </div>
+                  <div class="faq-item">
+                      <h4><i class="fa-solid fa-question-circle"></i> هل يتم حفظ معلومات وملفات العملاء بسرية تامة؟</h4>
+                      <p>نعم، السرية التامة لملفات العملاء هي أساس عملنا وأولوية قصوى، وفقاً لأخلاقيات المهنة والقوانين الكويتية.</p>
+                  </div>
+                  <div class="faq-item">
+                      <h4><i class="fa-solid fa-question-circle"></i> هل تتوفر الاستشارة أونلاين؟</h4>
+                      <p>بالتأكيد، يمكن حجز استشارات صوتية ومرئية عبر الإنترنت (Zoom/Teams) لخدمة العملاء داخل وخارج الكويت.</p>
+                  </div>
+                  <div class="faq-item">
+                      <h4><i class="fa-solid fa-question-circle"></i> هل يغطي المكتب قضايا الأحوال الشخصية لغير الكويتيين؟</h4>
+                      <p>نعم، يوفر المكتب استشارات وتمثيلاً قانونيًا في قضايا الأحوال الشخصية لجميع الجنسيات المقيمة في الكويت.</p>
+                  </div>
+              </div>
+              
+              <a href="index.html#booking-form-start" class="btn-outline" style="margin-top: 40px; border: 2px solid var(--text-grey); color: var(--text-grey);">حجز موعد استشارة <i class="fa-solid fa-chevron-left"></i></a>
+        </div>
+    </section>
+    <footer><p>جميع الحقوق محفوظة © مكتب المحامية إيمان عبد الرزاق العلي 2025</p></footer>
+    <script src="script.js"></script>
+</body>
+</html>
